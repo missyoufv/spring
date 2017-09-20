@@ -15,13 +15,8 @@ public class LogerInfoPrtAspect {
 	@Before("@annotation(logerInfoPrt)")
 	public void loggerInfoPrt( LogerInfoPrt logerInfoPrt){
 		Object ret = null;
-		try {
-			if(logerInfoPrt.loggerPrt()){
-				System.out.println("日志切面加入成功!");
-			}
-		} catch (Throwable e) {
-			e.printStackTrace();
+		if(logerInfoPrt.loggerPrt()){
+			System.out.println("日志切面加入成功!");
 		}
 	}
-
 }
