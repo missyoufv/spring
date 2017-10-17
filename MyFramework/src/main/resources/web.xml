@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app>
+	
+	<servlet>
+		  <url-pattern>/member/login</url-pattern>
+		  <servlet-class>com.study.framework.service.impl.LoginServlet</servlet-class> 
+	</servlet>
+	
+	<servlet>
+		  <url-pattern>/member/register</url-pattern>
+		  <servlet-class>com.study.framework.service.impl.RegisterServlet</servlet-class> 
+	</servlet>
+</web-app>
