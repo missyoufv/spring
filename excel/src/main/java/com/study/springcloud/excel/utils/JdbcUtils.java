@@ -1,12 +1,10 @@
 package com.study.springcloud.excel.utils;
 
-import java.io.FileInputStream;
 import java.sql.Connection;
 import java.sql.DriverManager;
 import java.sql.ResultSet;
 import java.sql.Statement;
 import java.util.LinkedList;
-import java.util.Properties;
 import java.util.ResourceBundle;
 
 public class JdbcUtils {
