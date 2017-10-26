@@ -1,0 +1,48 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+
+  <groupId>com.study</groupId>
+  <artifactId>JdbcPool</artifactId>
+  <version>0.0.1-SNAPSHOT</version>
+  <packaging>jar</packaging>
+
+  <name>JdbcPool</name>
+  <url>http://maven.apache.org</url>
+
+  <properties>
+    <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+  </properties>
+
+  <dependencies>
+    <dependency>
+      <groupId>junit</groupId>
+      <artifactId>junit</artifactId>
+      <version>3.8.1</version>
+      <scope>test</scope>
+    </dependency>
+    
+    <!--sl4j 提供桥阶层 而logback赋值日志的读写操作 -->
+    <!--之所以引入slf4j 不直接使用logback，方便 日志框架的替换，slf4j提供比较完善的桥阶层  -->
+    <!-- log4j 是阻塞式输出日志，而log4j 是异步的，在高并发的背景下，同步阻塞 的日志输出形式 会拖系统的性能，因此logback 成为主流 -->
+    
+    <dependency>
+    <groupId>org.slf4j</groupId>
+    <artifactId>slf4j-api</artifactId>
+     <version>1.7.5</version>
+	</dependency>
+	<dependency>
+	    <groupId>ch.qos.logback</groupId>
+	    <artifactId>logback-classic</artifactId>
+	    <version>1.0.13</version>
+	</dependency>
+	
+	<!-- mysql 驱动 -->
+	<dependency>
+		<groupId>mysql</groupId>
+		<artifactId>mysql-connector-java</artifactId>
+		<version>5.1.17</version>
+	</dependency>
+
+  </dependencies>
+</project>
