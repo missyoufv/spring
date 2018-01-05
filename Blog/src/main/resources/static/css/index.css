@@ -45,7 +45,7 @@
 .datas .title a{
 	color: #800040;	
 	border-bottom: 1px dashed #ddd;
-	margin: 0 10px;
+	margin: 0 2px;
 }
 
 .datas .summary{
@@ -69,6 +69,10 @@
 	max-width:150px;
 }
 
+.datas .title img,.datas .title a{
+	vertical-align: middle;
+}
+
 .datas .info{
 	display:block;
 	font-family: microsoft yahei, Verdana, Arial, Helvetica, sans-serif;
@@ -78,21 +82,35 @@
 	color: #33a5ba;
 }
 
-.user_info_box{
-	background-color:#FDFDFD;
-	border: 1px solid #E5E5E5;
-    padding: 10px;
-}
 
-.user_info{
-	font-size: 15px;
-    font-weight: bold;
-    border-bottom: 1px solid #E5E5E5;
-    padding-bottom: 10px;
-    padding-top: 5px;
-	
-}
+
 
 .user_pic{
-	
+	text-align:center;
+	padding-bottom: 11px;
+}
+
+.data_list .user_pic img{
+	padding-top: 10px;
+    width: 200px;
+    height: 250px;
+}
+
+.user_nickName{
+	text-align: center;
+    padding-bottom: 3px;
+    color: #EE6A50;
+    font-weight: 700;
+}
+
+.user_sign{
+	text-align: center;
+	margin-top: 2px;
+	color: #EE6A50;
+	font-weight: 700;
+}
+
+.footer font {
+    font-size: 10px;
+    color: #666;
 }
